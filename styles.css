@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB; /* 하늘색 배경 */
+}
+
+#game-container {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border: 2px solid #000;
+    background-color: #fff; /* 게임 배경 */
+}
+
+#cat {
+    position: absolute;
+    width: 40px; /* 고양이 캐릭터의 너비 */
+    height: 40px; /* 고양이 캐릭터의 높이 */
+    background-image: url('cat.png'); /* 고양이 이미지 경로 */
+    background-size: cover; /* 이미지를 요소 크기에 맞춤 */
+    bottom: 0; /* 바닥에 위치 */
+    left: 50px; /* 왼쪽에서 50px 떨어진 위치 */
+    background-color: rgba(255, 0, 0, 0.5); /* 임시로 빨간색 배경 추가 */
+}
+
+#obstacle {
+    position: absolute;
+    width: 40px; /* 장애물 너비 */
+    height: 40px; /* 장애물 높이 */
+    background-color: red; /* 장애물 색상 */
+    bottom: 0;
+    right: -40px; /* 초기 위치 (게임 화면 밖) */
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
